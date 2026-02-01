@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIKAP - Layanan Hukum Publik Pemerintah</title>
+
+  <link rel="icon" type="image/png" href="LogoSikap.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Georgia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute; z-index:-1; top: -1px; left: -1px;">
+    <defs>
+      <clipPath id="hero-wave-1" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.85 Q0.75,0.9, 0.5,0.85 T0,0.85 V0 Z" />
+      </clipPath>
+      <clipPath id="hero-wave-2" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.90 Q0.75,0.95, 0.5,0.90 T0,0.90 V0 Z" />
+      </clipPath>
+      <clipPath id="hero-wave-3" clipPathUnits="objectBoundingBox">
+        <path d="M0,0 H1 V0.95 Q0.75,1, 0.5,0.95 T0,0.95 V0 Z" />
+      </clipPath>
+    </defs>
+  </svg>
+
+  <header class="main-header">
+    <div class="container">
+      <nav class="main-nav">
+        <a href="#" class="logo">
+          <img src="LogoSikap.png" alt="Logo SIKAP">
+          <h1>SIKAP</h1>
+        </a>
+
+        <div class="search-bar">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Cari layanan, bantuan, atau informasi...">
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#tentang">Tentang kami</a></li>
+          
+          <li class="nav-item-guest"><a href="#kontak">Hubungi Kami</a></li>
+          <li class="nav-item-guest"><a href="#login" class="btn btn-outline">Masuk</a></li>
+          
+          <li class="nav-item-user"><a href="#dashboard">Dashboard Saya</a></li>
+          <li class="nav-item-user"><a href="#logout" class="btn btn-outline">Keluar</a></li>
+        </ul>
+
+        <button class="nav-toggle" arial-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-bg-wrapper">
+      <div class="hero-image">
+        <img src="Hukum-1.jpg" alt="Tim biro bantuan hukum pemerintah sedang rapat">
+      </div>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <h2>SIKAP</h2>
+        <h1>Sistem Informasi & Konsultasi Advokasi Publik</h1>
+        <p>Layanan bantuan hukum terpadu dari pemerintah untuk seluruh masyarakat. Dapatkan konsultasi, pantau progres, dan akses keadilan secara real-time.</p>
+        
+        <div class="hero-buttons">
+          <a href="#kontak" class="btn btn-primary">Ajukan Konsultasi <i class="fas fa-arrow-right"></i></a>
+          
+          <div class="status-check-wrapper">
+            <a href="#" class="btn btn-secondary" id="btn-cek-status">
+                Cek Status Pengajuan <i class="fas fa-search"></i>
+            </a>
+            <form action="#" class="status-check-form" id="form-cek-status">
+                <input type="text" placeholder="Masukkan kode pengajuan Anda...">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button type="button" class="btn-cancel-cek" id="btn-batal-cek">&times;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <span class="section-tag">Tentang kami</span>
+    <div class="slider-container">
+      <img src="gambarAdvokat.jpeg" alt="Tim advokat SIKAP sedang berdiskusi" class="slider-image slide-active">
+      <img src="RapatKoordinasiPenegakHukum.jpeg.jpg" alt="Rapat koordinasi tim hukum SIKAP" class="slider-image">
+    </div>
+
+    <div class="container tentang-container">
+      <div class="tentang-content">
+        <h2>Layanan Hukum Publik SIKAP</h2>
+        <p>SIKAP adalah inisiatif pemerintah untuk menyediakan akses keadilan yang merata bagi seluruh warga negara. Kami hadir untuk menjembatani kebutuhan masyarakat akan konsultasi dan pendampingan hukum yang profesional, transparan, dan bebas biaya.</p>
+        <p>Melalui platform ini, kami menghubungkan Anda dengan tim advokat dan paralegal negara yang berdedikasi untuk melayani.</p>
+        <a href="#kontak" class="btn btn-primary">Hubungi Tim Kami</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="layanan">
+    <div class="container">
+      <h2>Mengapa Menggunakan Layanan SIKAP?</h2>
+      <p class="section-subtitle">Layanan terpadu untuk semua kebutuhan advokasi publik Anda.</p>
+      <div class="layanan-grid">
+        <div class="layanan-card">
+          <i class="fas fa-scale-balanced"></i>
+          <h3>Gratis & Profesional</h3>
+          <p>Dapatkan layanan konsultasi dan pendampingan hukum dari advokat profesional tanpa dipungut biaya.</p>
+        </div>
+        <div class="layanan-card">
+          <i class="fas fa-tasks"></i>
+          <h3>Pemantauan Real-Time</h3>
+          <p>Akses dashboard pribadi untuk memantau setiap perkembangan pengajuan atau kasus Anda secara transparan.</p>
+        </div>
+        <div class="layanan-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Kerahasiaan Data Terjamin</h3>
+          <p>Seluruh data dan informasi Anda dilindungi dengan sistem enkripsi modern dan dijamin kerahasiaannya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="klien">
+    <div class="container">
+      <h2>Apa Kata Masyarakat</h2>
+      <div class="testi-slider-container">
+        <div class="testi-slider-track">
+          <div class="testi-card">
+            <p>"Layanan yang luar biasa profesional. Saya sangat terbantu dengan adanya pemantauan kasus secara transparan..."</p>
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4>- Budi, Warga Jakarta</h4>
+          </div>
+          <div class="testi-card">
+            <p>"Metode dan alurnya sangat jelas. Respon cepat dari tim advokat membuat saya tenang. Terima kasih SIKAP..."</p>
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4>- Ani, Pelaku UMKM</h4>
+          </div>
+          <div class="testi-card">
+            <p>"Kerahasiaan adalah prioritas utama. Saya yakin data saya aman dan kasus saya ditangani dengan baik..."</p>
+            <div class="testi-rating">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <h4>- Rahman, Aparatur Sipil</h4>
+          </div>
+          <div class="testi-card">
+              <p>"Akhirnya ada layanan hukum pemerintah yang jelas dan tidak berbelit-belit. Sangat membantu!"</p>
+              <div class="testi-rating">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+              <h4>- Siti, Pengusaha</h4>
+          </div>
+        </div>
+      </div>
+      <div class="slider-nav">
+          <button class="slider-btn" id="prev-slide"><i class="fas fa-chevron-left"></i></button>
+          <button class="slider-btn" id="next-slide"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+  <section id="cta-bantuan">
+    <div class="container">
+      <h2>Butuh Bantuan Hukum Profesional?</h2>
+      <p>Konsultasikan masalah hukum Anda dengan tim advokat kami. Kepercayaan dan kepuasan klien adalah prioritas utama kami.</p>
+    </div>
+  </section>
+  <section id="kontak">
+    <span class="section-tag">Hubungi Kami</span>
+    <div class="container">
+      <h2>Kami siap membantu Anda.</h2>
+      <p class="section-subtitle">Hubungi kami melalui formulir di bawah ini!</p>
+      <div class="kontak-container">
+        <div class="kontak-info">
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <div><h4>Jam Operasional</h4><p>Senin - Jumat, 08.00 - 16.00 WIB</p></div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><h4>Alamat Kantor</h4><p>Jl. Medan Merdeka Utara No. 1, Jakarta Pusat</p></div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <div><h4>Nomor Telepon</h4><p>(021) 123-4567</p></div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div><h4>Email</h4><p>layanan@sikap.go.id</p></div>
+          </div>
+        </div>
+        <form class="kontak-form">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Nama Anda">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email aktif Anda">
+          </div>
+          <div class="form-group">
+            <label for="telp">Nomor Telp</label>
+            <input type="tel" id="telp" placeholder="Nomor Telepon Anda">
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan Anda</label>
+            <textarea id="pesan" rows="5" placeholder="Tulis pertanyaan Anda..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-about">
+        <a href="#" class="logo">
+          <img src="LogoSikap.png" alt="Logo SIKAP (footer)">
+          <span class="logo-text-footer">SIKAP</span>
+        </a>
+        <p>Layanan Hukum Publik Terpadu. Jl. Medan Merdeka Utara No. 1, Jakarta Pusat.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#klien">Testimoni</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Tentang Kami</h4>
+        <ul>
+          <li><a href="#tentang">Tentang SIKAP</a></li>
+          <li><a href="#">Tim Advokat</a></li>
+          <li><a href="#">Mitra Kami</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>Hubungi Kami</h4>
+        <p>Ikuti kami:</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 SIKAP - Layanan Hukum Publik Pemerintah.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
